@@ -190,7 +190,7 @@ export async function run() {
     conclusion = CheckConclusion.Success;
   }
 
-  if (useAnnotations === false || isNewSchemaUrl) {
+  if (useAnnotations === false) {
     core.info(`Anotations are disabled. Skipping annotations...`);
     annotations = [];
   }
